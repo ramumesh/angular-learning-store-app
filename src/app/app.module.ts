@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -16,7 +16,7 @@ import { ShippingComponent } from './shipping/shipping.component';
 
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, AppRoutingModule],
   declarations: [AppComponent, HelloComponent, TopBarComponent, ProductListComponent, ProductAlertsComponent, ProductDetailsComponent, CartComponent, ShippingComponent],
   bootstrap: [AppComponent],
   providers: [CartService]
